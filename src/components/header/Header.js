@@ -15,22 +15,22 @@ export default function Header() {
                 <nav className={ `${isOnMobile ? (!isMenuOpen && "hidden") : "initial" } absolute top-16 left-0 bg-zinc-900 w-full h-fit md:relative md:top-auto md:left-auto md:w-auto md:h-auto`}>
                     <ul className="flex flex-col md:flex-row">
                         <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
-                            <a href="#about" className="inline-block text-white py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2">About</a>
+                            <a href="#about" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2 md:w-auto">About</a>
                         </li>
                         <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
-                            <a href="#education" className="inline-block text-white py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2">Education</a>
+                            <a href="#education" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2 md:w-auto">Education</a>
                         </li>
                         <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
-                            <a href="#experience" className="inline-block text-white py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2">Experience</a>
+                            <a href="#experience" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2 md:w-auto">Experience</a>
                         </li>
                         <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
-                            <a href="#skills" className="inline-block text-white py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2">Skills</a>
+                            <a href="#skills" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2 md:w-auto">Skills</a>
                         </li>
                         <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
-                            <a href="#projects" className="inline-block text-white py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2">Projects</a>
+                            <a href="#projects" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2 md:w-auto">Projects</a>
                         </li>
                         <li className="text-center" onClick={() => setMenuState(false)}>
-                            <a href="#resume" className="inline-block text-white py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2">Resume</a>
+                            <a href="#resume" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:py-2 md:w-auto">Resume</a>
                         </li>
                     </ul>
                 </nav>
