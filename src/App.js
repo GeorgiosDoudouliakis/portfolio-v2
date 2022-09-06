@@ -5,8 +5,10 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
       <>
-        <Header/>
-        <Footer/>
+          <div className="w-full h-1 bg-slate-500"></div>
+          <Header/>
+          <Footer/>
+          <div className="w-full h-1 bg-slate-500"></div>
       </>
   );
 }
