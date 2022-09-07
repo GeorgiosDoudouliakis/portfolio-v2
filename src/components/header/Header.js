@@ -11,7 +11,7 @@ export default function Header() {
     return (
         <header className="w-full bg-zinc-900 py-3 px-6 relative md:px-0">
             <div className="container flex justify-between items-center mx-auto">
-                <span className="text-md text-white font-bold p-2 border-2 border-orange-500 rounded lg:text-base">GD</span>
+                <span className="text-md text-white font-bold p-2 border-2 border-orange-500 rounded-full lg:text-base">GD</span>
                 <nav className={ `${isOnMobile ? (!isMenuOpen && "hidden") : "initial" } absolute top-16 left-0 bg-zinc-900 w-full h-fit border-y-2 border-zinc-700 md:relative md:top-auto md:left-auto md:w-auto md:h-auto md:border-y-0`}>
                     <ul className="flex flex-col md:flex-row">
                         <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
