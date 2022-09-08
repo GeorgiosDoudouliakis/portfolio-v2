@@ -18,13 +18,7 @@ export default function Header() {
                             <a href="#about" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:text-sm md:py-2 md:w-auto lg:text-base">About</a>
                         </li>
                         <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
-                            <a href="#education" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:text-sm md:py-2 md:w-auto lg:text-base">Education</a>
-                        </li>
-                        <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
                             <a href="#experience" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:text-sm md:py-2 md:w-auto lg:text-base">Experience</a>
-                        </li>
-                        <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
-                            <a href="#skills" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:text-sm md:py-2 md:w-auto lg:text-base">Skills</a>
                         </li>
                         <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
                             <a href="#projects" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:text-sm md:py-2 md:w-auto lg:text-base">Projects</a>
