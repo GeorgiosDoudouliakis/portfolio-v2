@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header/Header';
 import Intro from './components/intro/Intro';
 import About from './components/about/About';
+import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
           <Header/>
           <Intro/>
           <About/>
+          <Contact/>
           <Footer/>
           <div className="w-full h-1 bg-slate-500"></div>
       </>

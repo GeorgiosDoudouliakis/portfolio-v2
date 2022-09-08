@@ -23,6 +23,9 @@ export default function Header() {
                         <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
                             <a href="#projects" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:text-sm md:py-2 md:w-auto lg:text-base">Projects</a>
                         </li>
+                        <li className="text-center md:mr-2" onClick={() => setMenuState(false)}>
+                            <a href="#contact" className="inline-block text-white w-full py-4 px-4 font-bold cursor-pointer hover:text-orange-500 md:text-sm md:py-2 md:w-auto lg:text-base">Contact</a>
+                        </li>
                         <li className="text-center" onClick={() => setMenuState(false)}>
                             <a href="/assets/pdf/DOUDOULIAKIS_GEORGIOS_CV.pdf" className="inline-flex border-2 border-orange-800 rounded text-orange-500 py-2 px-4 font-bold cursor-pointer hover:text-white hover:bg-orange-800 md:text-sm md:py-2 md:w-auto lg:text-base" download>
                                 <span className="mr-2">Resume</span>
