@@ -1,8 +1,11 @@
+import {motion} from "framer-motion";
+
 export default function About() {
     const technologies = ["HTML5", "CSS3", "JavaScript", "TypeScript", "SCSS", "Git", "Angular 2+", "Angular JS", "React (currently learning)"];
 
     return (
-      <section id="about" className="py-10 px-6 bg-zinc-800 md:py-14 lg:py-16">
+      <motion.section id="about" className="py-10 px-6 bg-zinc-800 md:py-14 lg:py-16" initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1 }}>
             <h2 className="text-center text-3xl mb-8 mx-auto">
                 <span className="mr-3 text-slate-300">01.</span>
                 <span className="text-orange-500">About Me</span>
@@ -22,6 +25,6 @@ export default function About() {
                     }
                 </ul>
             </div>
-      </section>
+      </motion.section>
     );
 }

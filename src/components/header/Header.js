@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import {motion} from "framer-motion";
 
 export default function Header() {
     const [isOnMobile, setIsOnMobileState] = useState(false);
@@ -9,7 +10,8 @@ export default function Header() {
     }, [])
 
     return (
-        <header className="w-full bg-zinc-900 py-3 px-6 relative shadow-lg shadow-zinc-800 md:px-0">
+        <motion.header className="w-full bg-zinc-900 py-3 px-6 relative shadow-lg shadow-zinc-800 md:px-0"
+                       initial={{ opacity: 0, bottom: '68px' }} animate={{ opacity: 1, bottom: 0 }} transition={{ duration: 0.5 }}>
             <div className="container flex justify-between items-center mx-auto">
                 <span className="text-md text-white font-bold p-2 border-2 border-orange-500 rounded-full lg:text-base">GD</span>
                 <nav className={ `${isOnMobile ? (!isMenuOpen && "hidden") : "initial" } absolute top-16 left-0 bg-zinc-900 w-full h-fit border-y-2 border-zinc-700 md:relative md:top-auto md:left-auto md:w-auto md:h-auto md:border-y-0`}>
@@ -49,6 +51,6 @@ export default function Header() {
                     )
                 }
             </div>
-        </header>
+        </motion.header>
     );
 }

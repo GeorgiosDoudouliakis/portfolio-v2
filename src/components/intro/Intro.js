@@ -1,8 +1,10 @@
 import me from './me.png';
+import {motion} from "framer-motion";
 
 export default function Intro() {
     return (
-        <section className="flex justify-center align-middle py-10 px-6 bg-zinc-900 md:px-0 md:py-14 lg:py-16">
+        <motion.section className="flex justify-center align-middle py-10 px-6 bg-zinc-900 md:px-0 md:py-14 lg:py-16" initial={{ opacity: 0 }}
+                 animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.5 }}>
             <div>
                 <h1 className="text-2xl text-center text-white mb-2 md:text-3xl lg:text-4xl">GEORGE DOUDOULIAKIS</h1>
                 <p className="text-center text-base text-slate-300 md:text-lg">Welcome to my portfolio!</p>
@@ -31,6 +33,6 @@ export default function Intro() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
