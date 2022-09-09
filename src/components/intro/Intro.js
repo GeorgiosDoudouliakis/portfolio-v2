@@ -13,10 +13,10 @@ export default function Intro() {
                         <img src={me} className="w-full h-full object-cover object-center" alt="George Doudouliakis" title="George Doudouliakis" width="200" height="200" />
                     </div>
                     <div className="self-end">
-                        <p className="text-base text-center text-white mb-8 md:text-lg md:text-left">
+                        <p className="text-base text-center text-white mb-8 md:text-lg md:text-left lg:text-xl xl:text-2xl">
                             <span>I'm a Front End Web Developer,</span>
                             <br/>
-                            <span>Based in Thessaloniki</span>
+                            <span>based in Thessaloniki (GR)</span>
                         </p>
                         <div className="flex justify-center text-orange-500 mb-3 md:justify-start">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 md:w-6 md:h-6">
