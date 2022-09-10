@@ -10,7 +10,7 @@ export default function Header() {
     }, [])
 
     return (
-        <motion.header className="w-full bg-zinc-900 py-3 px-6 relative shadow-lg shadow-zinc-800 md:px-0"
+        <motion.header className="w-full bg-zinc-900 py-3 px-6 relative shadow-lg shadow-zinc-800 lg:px-0"
                        initial={{ opacity: 0, bottom: '68px' }} animate={{ opacity: 1, bottom: 0 }} transition={{ duration: 0.5 }}>
             <div className="container flex justify-between items-center mx-auto">
                 <span className="text-md text-white font-bold p-2 border-2 border-orange-500 rounded-full lg:text-base">GD</span>

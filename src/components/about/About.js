@@ -6,6 +6,7 @@ export default function About() {
     return (
       <motion.section id="about" className="text-center py-10 px-6 bg-zinc-800 md:py-14 lg:py-16" initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1 }}>
+          <div className="container mx-auto">
             <div className="flex justify-center text-3xl mb-8">
                 <span className="mr-3 text-slate-300">01.</span>
                 <h2 className="text-orange-500">About Me</h2>
@@ -25,6 +26,7 @@ export default function About() {
                     }
                 </ul>
             </div>
+          </div>
       </motion.section>
     );
 }

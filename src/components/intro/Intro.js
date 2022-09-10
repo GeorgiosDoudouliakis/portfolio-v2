@@ -5,14 +5,14 @@ export default function Intro() {
     return (
         <motion.section className="flex justify-center align-middle py-10 px-6 bg-zinc-900 md:px-0 md:py-14 lg:py-16" initial={{ opacity: 0 }}
                  animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.5 }}>
-            <div>
+            <div className="container">
                 <h1 className="text-2xl text-center text-white mb-2 md:text-3xl lg:text-4xl">GEORGE DOUDOULIAKIS</h1>
                 <p className="text-center text-base text-slate-300 md:text-lg">Welcome to my portfolio!</p>
-                <div className="flex flex-col md:flex-row">
-                    <div className="w-52 h-52 mb-6 ml-auto md:mx-0 md:mb-0 md:ml-0">
+                <div className="flex flex-col justify-center md:flex-row">
+                    <div className="w-52 h-52 mb-6 mx-auto md:mx-0 md:mb-0 md:ml-0">
                         <img src={me} className="w-full h-full object-cover object-center" alt="George Doudouliakis" title="George Doudouliakis" width="200" height="200" />
                     </div>
-                    <div className="self-end">
+                    <div className="self-end mx-auto md:mx-0">
                         <p className="text-base text-center text-white mb-8 md:text-lg md:text-left lg:text-xl xl:text-2xl">
                             <span>I'm a Front End Web Developer,</span>
                             <br/>
