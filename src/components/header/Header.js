@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {motion} from "framer-motion";
 
-export default function Header() {
+const Header = () => {
     const [isOnMobile, setIsOnMobileState] = useState(false);
     const [isMenuOpen, setMenuState] = useState(false);
 
@@ -54,3 +54,5 @@ export default function Header() {
         </motion.header>
     );
 }
+
+export default Header;

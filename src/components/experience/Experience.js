@@ -1,6 +1,6 @@
 import {motion} from "framer-motion";
 
-export default function Experience() {
+const Experience = () => {
     const experience = [
         {
             period: {
@@ -64,3 +64,5 @@ export default function Experience() {
         </motion.section>
     )
 }
+
+export default Experience;

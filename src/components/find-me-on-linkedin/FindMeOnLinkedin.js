@@ -1,4 +1,4 @@
-export default function FindMeOnLinkedin() {
+const FindMeOnLinkedin = () => {
     return (
         <p className="text-center text-slate-300 py-1 bg-zinc-900">
             You can catch
@@ -9,3 +9,5 @@ export default function FindMeOnLinkedin() {
         </p>
     )
 }
+
+export default FindMeOnLinkedin;

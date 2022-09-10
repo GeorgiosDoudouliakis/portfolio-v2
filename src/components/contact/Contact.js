@@ -1,6 +1,6 @@
 import {motion} from "framer-motion";
 
-export default function Contact() {
+const Contact = () => {
     return (
         <motion.section id="contact" className="text-center py-10 px-6 bg-zinc-900 md:py-14 md:px-0 lg:py-16" initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }} transition={{ delay: 0.2 }} viewport={{ once: true }}>
@@ -18,3 +18,5 @@ export default function Contact() {
         </motion.section>
     )
 }
+
+export default Contact;

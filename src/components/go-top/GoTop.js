@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {motion} from "framer-motion";
 
-export default function GoTop() {
+const GoTop = () => {
     const [canShowArrow, setCanShowArrow] = useState(false);
     const goTop = () => window.scrollTo(0, 0);
 
@@ -26,3 +26,5 @@ export default function GoTop() {
         </>
     )
 }
+
+export default GoTop;

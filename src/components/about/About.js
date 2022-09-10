@@ -1,6 +1,6 @@
 import {motion} from "framer-motion";
 
-export default function About() {
+const About = () => {
     const technologies = ["HTML5", "CSS3", "JavaScript", "TypeScript", "SCSS", "Git", "Angular 2+", "Angular JS", "React (currently learning)"];
 
     return (
@@ -30,3 +30,5 @@ export default function About() {
       </motion.section>
     );
 }
+
+export default About;
