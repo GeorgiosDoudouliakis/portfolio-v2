@@ -15,12 +15,14 @@ function App() {
       <>
           <div className="w-full h-1 bg-slate-500"></div>
           <Header/>
-          <Intro/>
-          <About/>
-          <Experience/>
-          <Projects/>
-          <Contact/>
-          <FindMeOnLinkedin/>
+          <main>
+              <Intro/>
+              <About/>
+              <Experience/>
+              <Projects/>
+              <Contact/>
+              <FindMeOnLinkedin/>
+          </main>
           <Footer/>
           <div className="w-full h-1 bg-slate-500"></div>
 
