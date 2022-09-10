@@ -42,7 +42,7 @@ export default function Experience() {
                             <span className="block text-center w-56 mb-3 mx-auto text-slate-300 md:text-left md:inline-block md:mx-0 md:mb-0">{exp.period.from} - {exp.period.to}</span>
                             <div className="inline-flex flex-col w-80 p-4 bg-zinc-800 rounded md:ml-16">
                                 <h3 className="text-center text-slate-300 md:text-left">{exp.jobTitle}</h3>
-                                <a href={exp.company.url} target="_blank" className="text-center mb-5 text-orange-500 hover:underline md:text-left">@{exp.company.name}</a>
+                                <a href={exp.company.url} target="_blank" rel="noreferrer" className="text-center mb-5 text-orange-500 hover:underline md:text-left">@{exp.company.name}</a>
                                 <ul className="inline-flex flex-wrap justify-center md:justify-start">
                                     {
                                         exp.technologies.map((tech, techId) => (
