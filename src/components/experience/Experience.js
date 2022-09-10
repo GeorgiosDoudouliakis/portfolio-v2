@@ -39,7 +39,7 @@ export default function Experience() {
                 {
                     experience.map((exp, expId) => (
                         <motion.article key={expId} className="mb-8" initial={{ opacity: 0, scale: 0 }}
-                                        whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.6*(expId + 0.5) }} viewport={{ once: true }}>
+                                        whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2*(expId + 0.5) }} viewport={{ once: true }}>
                             <span className="block text-center w-56 mb-3 mx-auto text-slate-300 md:text-left md:inline-block md:mx-0 md:mb-0">{exp.period.from} - {exp.period.to}</span>
                             <div className="inline-flex flex-col w-80 p-4 bg-zinc-800 rounded md:ml-16">
                                 <h3 className="text-center text-slate-300 md:text-left">{exp.jobTitle}</h3>
