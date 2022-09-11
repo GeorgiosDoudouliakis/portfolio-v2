@@ -3,6 +3,7 @@ import {motion} from "framer-motion";
 export default function Projects() {
     const projects = [
         {
+            id: 1,
             title: 'Formula One',
             description: 'Website with stats about formula one from 1950 to 2021. Driver/Constructor details, standings, circuits, statistics showing points per circuit, map with the location of each circuit and schedule',
             links: {
@@ -12,6 +13,7 @@ export default function Projects() {
             technologies: ["Angular 2+", "Angular Material", "Open Layers", "Apace Echarts"]
         },
         {
+            id: 2,
             title: 'Softare Development Company Employees',
             description: 'Management system for software development companies (only for large devices)',
             links: {
@@ -32,9 +34,9 @@ export default function Projects() {
             <p className="mb-4 text-slate-300 xl:text-lg">Here are some projects i have built</p>
             <section className="grid grid-cols-1 gap-y-2 md:grid-cols-2 md:gap-2 lg:w-3/5 lg:mx-auto">
                 {
-                    projects.map((project, projectId) => (
-                        <motion.article key={projectId} className="p-4 bg-zinc-900 rounded" initial={{ opacity: 0, scale: 0 }}
-                                 whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2*(projectId + 0.5) }} viewport={{ once: true }}>
+                    projects.map((project) => (
+                        <motion.article key={project.id} className="p-4 bg-zinc-900 rounded" initial={{ opacity: 0, scale: 0 }}
+                                 whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2*(project.id + 0.5) }} viewport={{ once: true }}>
                             <div className="flex justify-between align-middle mb-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-orange-500 w-8 h-8">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />

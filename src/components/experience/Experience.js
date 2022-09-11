@@ -3,6 +3,7 @@ import {motion} from "framer-motion";
 const Experience = () => {
     const experience = [
         {
+            id: 1,
             period: {
                 from: "March 2022",
                 to: "Present"
@@ -15,6 +16,7 @@ const Experience = () => {
             technologies: ["AngularJS", "Angular 2+", "Bootstrap", "Tailwind", "NG-ZORRO"]
         },
         {
+            id: 2,
             period: {
                 from: "April 2021",
                 to: "January 2022"
@@ -37,9 +39,9 @@ const Experience = () => {
             </div>
             <section>
                 {
-                    experience.map((exp, expId) => (
-                        <motion.article key={expId} className="mb-8" initial={{ opacity: 0, scale: 0 }}
-                                        whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2*(expId + 0.5) }} viewport={{ once: true }}>
+                    experience.map((exp) => (
+                        <motion.article key={exp.id} className="mb-8" initial={{ opacity: 0, scale: 0 }}
+                                        whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2*(exp.id + 0.5) }} viewport={{ once: true }}>
                             <span className="block text-center w-56 mb-3 mx-auto text-slate-300 md:text-left md:inline-block md:mx-0 md:mb-0">{exp.period.from} - {exp.period.to}</span>
                             <div className="inline-flex flex-col w-80 p-4 bg-zinc-800 rounded md:ml-16">
                                 <h3 className="text-center text-slate-300 md:text-left">{exp.jobTitle}</h3>
